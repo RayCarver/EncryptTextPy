@@ -16,12 +16,12 @@ def encryption(text):
 
 # Шифровка тексту
 def crypt():
-    f = open("text.txt", "a")
+    f = open("admin.txt", "a")
     f.close()
-    f = open("text.txt", "r")
+    f = open("admin.txt", "r")
     text_read = f.read()
     f.close()
-    f = open("text.txt", "w")
+    f = open("admin.txt", "w")
     f.write(encryption(text_read))
     f.close
     return
